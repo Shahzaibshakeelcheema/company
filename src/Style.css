@@ -1,0 +1,31 @@
+body {
+    margin: 0px;
+    scroll-behavior: smooth;
+
+}
+
+.topHead {
+    /*header black section*/
+    background-color: #2f2f2f;
+    line-height: 13mm;
+    color: white;
+    text-align: right;
+    margin: 0px;
+}
+
+.bhead {
+    background-color: #2f2f2f;
+    margin: 0;
+}
+
+.bhead span {
+    padding-right:90px;
+}
+
+.bheadlogo {
+    margin-top: 2.5mm;
+    width: 15px;
+    height: 15px;
+    padding-top: 1mm;
+    padding-right: 15px;
+}
