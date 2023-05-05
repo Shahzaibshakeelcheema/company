@@ -29,3 +29,69 @@ body {
     padding-top: 1mm;
     padding-right: 15px;
 }
+
+.c1{
+    display: inline;
+    align-items: center;
+}
+.bar{
+    display: flex;
+}
+.items{
+    margin-left: 2.3cm;
+margin-right: 2.3cm;
+    text-decoration: none;
+}
+NavLink{
+    text-decoration: none;
+}
+
+.cardHolder{
+
+    display: flex;
+    float: left;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    text-align:left;
+}
+.card{
+    width: 35%;
+    margin-left:20px;
+    
+}
+.card div{
+    color: black;
+}
+
+.services{
+    padding-left: 4cm;
+    padding-right: 4cm;
+    justify-content: center;
+    align-items: center;
+}
+.services h1{
+    text-align: center;
+    color:black
+}
+.services h1:hover{
+    color: yellow;
+}
+.contact{
+    padding-left: 4cm;
+    padding-right: 4cm;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+}
+.about{
+    padding-left: 4cm;
+    padding-right: 4cm;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+}

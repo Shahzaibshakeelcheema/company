@@ -3,16 +3,16 @@ import { Home } from "./Home";
 import { About } from "./About";
 import { Contact } from "./Contact";
 import { Services } from "./Services";
-//import Navbar from "./components/Navbar"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TopBar from "./TopBar";
-// import AppNavbar from "./AppNavBar";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import "bootswatch/dist/lux/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootswatch/dist/lux/bootstrap.min.css";
 
 function App() {
   return (
     <div> 
+    <TopBar/>
+    
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -23,7 +23,6 @@ function App() {
         
         </Routes>
       </BrowserRouter>
-      <TopBar/>
     </div>
   );
 }
