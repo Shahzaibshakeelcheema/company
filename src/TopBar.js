@@ -4,9 +4,9 @@ function TopBar() {
   return (
     <div>
       <header className="topHead">
-        <ul class="bhead">
+        <ul className="bhead">
           <span> 28 Calverley Moor Avenue Leeds West Yorkshire LS28 8EL</span>
-          {/* <img class="bheadlogo" src="clock.png" type="icon" alt="Clocklogo" />*/}
+          {/* <img className="bheadlogo" src="clock.png" type="icon" alt="Clocklogo" />*/}
           <span> Mon - Fri 9.00 - 6.00 </span>
         </ul>
       </header>
