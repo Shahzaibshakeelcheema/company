@@ -12,7 +12,7 @@ import TopBar from "./TopBar";
 
 function App() {
   return (
-    <div>
+    <div> 
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
