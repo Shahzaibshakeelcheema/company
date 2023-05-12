@@ -1,41 +1,46 @@
 import React from "react";
-import { NavLink } from "react-router-dom"
-import { Nav, Navbar } from "react-bootstrap"
-import './Style.css'
-
+import { Link } from "react-router-dom";
+import { Nav, NavItem, Navbar,NavbarBrand } from "react-bootstrap";
+//import './Style.css'
 
 function AppNavBar() {
+  return (
+    <div className="navbar navbar-expand navbar-dark bg-warning justify-content-center">
+      <Navbar bg="warning">
+        <div className="container-fluid c1 ">
+          <Nav className="mr-auto bar ">
+          <NavItem className="items">
+            <Link to="/login" > Log In </Link>
+</NavItem>
+            <NavItem className="items">
+                            <Link to="/home" active="true"> Home </Link>
+            </NavItem>
+            <NavItem className="items">
+                            <Link to="/services">Services</Link>
+            </NavItem>
 
-    return (
-        <Navbar  dark expand="lg"  bg="warning">
-            <div className="container-fluid c1" flex>
-                <Nav className="mr-auto bar" navbar>
-                    <Nav.Link className="items">
-                        <NavLink to="/" active>
-                            Home <span className="visually-hidden">(current)</span>
-                        </NavLink>
-                    </Nav.Link>
-                    <Nav.Link className="items">
-                        <NavLink to="/Services">Services</NavLink>
-                    </Nav.Link>
+            <NavbarBrand className="navbar-brand">
+                         <Link to="/insel" className="items">    INSEL </Link>
+                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
+  </button>
+            </NavbarBrand>
 
+            <NavItem className="items">
+                            <Link to="/contact">Contact</Link>
+            </NavItem>
 
-                    <Navbar.Brand href="/" className="items" >INSEL Solutions</Navbar.Brand>
-
-
-
-                    <Nav.Link className="items">
-                        <NavLink to="/contact">Contact</NavLink>
-                    </Nav.Link>
-                    <Nav.Link className="items">
-                        <NavLink to="/about">About Us</NavLink>
-                    </Nav.Link>
-
-                </Nav>
-            </div>
-
-        </Navbar>
-    );
+            <NavItem className="items">
+                             <Link to="/about">About Us</Link>
+            </NavItem>
+            <NavItem className="items">
+            <Link to="/register" > Sign Up </Link>
+</NavItem>
+          </Nav>
+        </div>
+      </Navbar>
+    </div>
+  );
 }
 
 export default AppNavBar;

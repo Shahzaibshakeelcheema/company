@@ -6,7 +6,14 @@ function CountryList() {
   const [countries, setCountries] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   //const [pageNo,setPageNo] = useState(10)
-
+  const fetchData = async () => {
+    try {
+      const response = await axios.get("https://restcountries.com/v3.1/all");
+      setCountries(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
   
     useEffect(() => {
       const fetchData = async () => {
@@ -29,7 +36,7 @@ function CountryList() {
         console.log(error);
       }
     };
-    
+
   return (
     <div className="container">
       <div className="row">
@@ -48,9 +55,12 @@ function CountryList() {
             onChange={e => setName(e.target.value)}
           /> 
           
-         
-          <button className='btn btn-primary mb-4 ' onClick={fetchbybtn } >Search</button>
+         <div className='d-flex flex-row mb-1 justify-content-evenly'>
+         {/* can add justify-content-between or justify-content-around */}
+          <button className='btn btn-outline-primary btn-sm mb-2 ' onClick={fetchbybtn } >Search</button>
           
+          <button className='btn btn-outline-warning btn-sm mb-2 ' onClick={fetchData } >Refresh</button>
+          </div>
           <table className="table table-bordered table-hover">
             <thead className="table-warning">
               <tr>

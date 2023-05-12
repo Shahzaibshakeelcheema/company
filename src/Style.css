@@ -37,15 +37,6 @@ body {
 .bar{
     display: flex;
 }
-.items{
-    margin-left: 2.3cm;
-margin-right: 2.3cm;
-    text-decoration: none;
-}
-NavLink{
-    text-decoration: none;
-}
-
 .cardHolder{
 
     display: flex;
@@ -77,7 +68,7 @@ NavLink{
     color:black
 }
 .services h1:hover{
-    color: yellow;
+    color:#ffc107;
 }
 .contact{
     padding-left: 4cm;

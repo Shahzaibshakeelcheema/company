@@ -1,14 +1,17 @@
 import React from 'react'
-import TopBar from './TopBar'
 import AppNavBar from './AppNavBar'
+import MyForm from './MyForm'
 
-const Header = () => {
+const SignUp = () => {
   return (
     <div>
-    <TopBar/>
     <AppNavBar/>
+    <div>
+    <MyForm/>
+    </div>
+    
     </div>
   )
 }
 
-export default Header
+export default SignUp

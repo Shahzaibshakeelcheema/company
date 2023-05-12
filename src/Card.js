@@ -20,18 +20,18 @@ const Card = () => {
   </div>
   
 </div>
-<div class="card border-warning mb-3">
-  <div class="card-body">
-    <h4 class="card-title">POS Devs</h4>
-    <h6 class="card-subtitle mb-2 text-muted">Point of Sale</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+<div className="card border-warning mb-3">
+  <div className="card-body">
+    <h4 className="card-title">POS Devs</h4>
+    <h6 className="card-subtitle mb-2 text-muted">Point of Sale</h6>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
   </div>
-  <div class="card border-warning mb-3">
-  <div class="card-body">
-    <h4 class="card-title">Game Dev</h4>
-    <h6 class="card-subtitle mb-2 text-muted">Unity Devs</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <div className="card border-warning mb-3">
+  <div className="card-body">
+    <h4 className="card-title">Game Dev</h4>
+    <h6 className="card-subtitle mb-2 text-muted">Unity Devs</h6>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
   </div>
   
@@ -49,18 +49,18 @@ const Card = () => {
     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
 </div>
-<div class="card border-warning mb-3">
-  <div class="card-body">
-    <h4 class="card-title">POS Devs</h4>
-    <h6 class="card-subtitle mb-2 text-muted">Point of Sale</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+<div className="card border-warning mb-3">
+  <div className="card-body">
+    <h4 className="card-title">POS Devs</h4>
+    <h6 className="card-subtitle mb-2 text-muted">Point of Sale</h6>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
   </div>
-  <div class="card border-warning mb-3">
-  <div class="card-body">
-    <h4 class="card-title">Game Dev</h4>
-    <h6 class="card-subtitle mb-2 text-muted">Unity Devs</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <div className="card border-warning mb-3">
+  <div className="card-body">
+    <h4 className="card-title">Game Dev</h4>
+    <h6 className="card-subtitle mb-2 text-muted">Unity Devs</h6>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
   </div>
 <div className="card border-warning mb-3" >
