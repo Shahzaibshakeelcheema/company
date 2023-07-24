@@ -9,6 +9,7 @@ import TopBar from "./TopBar";
 //import "bootswatch/dist/lux/bootstrap.min.css";
 import NumberList from "./NumberList";
 import SignUp from "./SignUp";
+import Login from "./Login";
 
 function App() {
   const [numbers, setNumbers] = useState([1, 2, 3, 4, 5]);
@@ -40,14 +41,15 @@ function App() {
               />
             }
           />
-          <Route path="/login" element={<SignUp/>} />
+          <Route path="/login" element={<Login/>} />
 
           <Route path="/home" element={<Home />} />
           <Route path="/register" element={<SignUp/>} />
-          <Route path="/" element={<SignUp/>} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/" element={<NumberList/>} />
+
         </Routes>
       </BrowserRouter>
     </div>

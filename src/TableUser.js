@@ -3,7 +3,7 @@ import React from 'react'
 const TableUser = (MyUser) => {
     //console.log("first")
     //console.log(MyUser2)
-    
+    const MyUser2=MyUser;
     //const {MyUser} = props;
     //const {MyUser} = props;
     // console.log('first')
@@ -26,7 +26,7 @@ const TableUser = (MyUser) => {
               </tr>
             </thead>
             <tbody className='table-dark'>
-          { Object.values(MyUser).map((user,index) => (
+          { Object.values(MyUser2).map((user,index) => (
                 <tr key={index}>
                   <td>{user.name}</td>
                   <td>{user.email}</td>

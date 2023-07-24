@@ -1,7 +1,7 @@
 this can be used in a form 
 
 <div class="form-group row">
-      <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+      <label htmlFor="staticEmail" class="col-sm-2 col-form-label">Email</label>
       <div class="col-sm-10">
         <input type="text" class="form-control-plaintext" id="staticEmail" name="name" value={formData.email}/>
       </div>
@@ -15,7 +15,7 @@ this can be used in a form
 
 <form onSubmit={handleSubmit} >
     <div className='form-group'>
-    <label for="exampleInputEmail1">
+    <label htmlFor="exampleInputEmail1">
       Name:
       <input classname='form-control mb-3' type="text" name="name" value={formData.role} onChange={handleChange} required/>
     </label>
